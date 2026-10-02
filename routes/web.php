@@ -14,3 +14,6 @@ Route::get('/Nosotros', function () {
 Route::get('/Contacto', function () {
     return view('Contacto');
 })->name('Contacto');
+Route::get('/formulario', function () {
+    return view('formulario');
+})->name('formulario');
