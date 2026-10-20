@@ -152,30 +152,38 @@
                             Menú
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a
+                            class="nav-link {{ request()->routeIs('clientes.index') ? 'active' : '' }}"
+                            href="{{ route('clientes.index') }}"
+                        >
+                            Clientes
+                        </a>
+                    </li>
  
                     <li class="nav-item">
                         <a
                             class="nav-link {{ request()->routeIs('nosotros') ? 'active' : '' }}"
-                            href="{{ route('Nosotros') }}"
+                            href="{{ route('nosotros') }}"
                         >
-                            Nosotros
+                            nosotros
                         </a>
                     </li>
  
                     <li class="nav-item">
                         <a
                             class="nav-link {{ request()->routeIs('contacto') ? 'active' : '' }}"
-                            href="{{ route('Contacto') }}"
+                            href="{{ route('contacto') }}"
                         >
-                            Contacto
+                            contacto
                         </a>
                     </li>
                      <li class="nav-item">
                         <a
-                            class="nav-link {{ request()->routeIs('clientes.index') ? 'active' : '' }}"
-                            href="{{ route('clientes.index') }}"
+                            class="nav-link {{ request()->routeIs('producto.index') ? 'active' : '' }}"
+                            href="{{ route('producto.index') }}"
                         >
-                            INDEX
+                            productos
                         </a>
                     </li>
                 </ul>
