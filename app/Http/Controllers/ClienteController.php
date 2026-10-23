@@ -15,12 +15,13 @@ class ClienteController extends Controller
 
         return view('clientes.index', compact('clientes'));
     }
-
+    // funcion para consulta de datos de una vista ala base de datos
+    
     public function create(): View
     {
         return view('clientes.create');
     }
-
+   // funcion para guardar datos del formulario 
     public function store(Request $request): RedirectResponse
     {
         $datos = $request->validate([
