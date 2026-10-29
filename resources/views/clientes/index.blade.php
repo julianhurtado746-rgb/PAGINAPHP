@@ -35,6 +35,7 @@
                             <th>Ciudad</th>
                             <th>Mensaje</th>
                             <th>Fecha</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -47,6 +48,7 @@
                                 <td>{{ $cliente->ciudad }}</td>
                                 <td>{{ $cliente->mensaje }}</td>
                                 <td>{{ $cliente->created_at->format('d/m/Y H:i') }}</td>
+                                <td><a href="{{ route('clientes.edit', $cliente->id) }}">Editar</a></td>
                             </tr>
                         @empty
                             <tr>
