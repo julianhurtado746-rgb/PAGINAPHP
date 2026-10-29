@@ -37,4 +37,5 @@ Route::get('/clientes/crear', [ClienteController::class, 'create'])
 
 Route::post('/clientes', [ClienteController::class, 'store'])
     ->name('clientes.store');
-
+Route::get('/clientes/{cliente}/editar', [ClienteController::class, 'edit'])->name('clientes.edit');
+Route::put('/clientes/{cliente}', [ClienteController::class, 'update'])->name('clientes.update');
