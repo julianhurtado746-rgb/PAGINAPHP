@@ -57,6 +57,12 @@
                                 </td>
                             </tr>
                         @endforelse
+                        @if (session('success'))
+    <div class="alert alert-success">
+        {{ session('success') }}
+    </div>
+@endif
+
                     </tbody>
                 </table>
             </div>

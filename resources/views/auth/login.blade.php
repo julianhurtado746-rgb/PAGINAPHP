@@ -45,3 +45,15 @@
         </div>
     </form>
 </x-guest-layout>
+<div class="mt-4 text-center">
+
+    <p class="text-sm text-gray-600">
+        ¿No tienes una cuenta?
+    </p>
+
+    <a href="{{ route('register') }}"
+       class="text-sm font-semibold text-indigo-600 hover:underline">
+        Registrarse
+    </a>
+
+</div>
