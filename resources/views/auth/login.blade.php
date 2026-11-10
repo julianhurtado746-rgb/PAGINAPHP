@@ -1,3 +1,18 @@
+<style>
+  /* TEMA KAWASAKI - SOLO COLOR */
+  body { background-color: #0a0a0a !important; }
+  /* Botón LOG IN y botones en verde Kawasaki */
+  button, [type="submit"] {
+    background-color: #00a651 !important;
+    border-color: #00a651 !important;
+    color: white !important;
+  }
+  /* Links Forgot password en verde */
+  a { color: #00a651 !important; }
+  /* Checkbox y focus en verde, no en morado */
+  input[type="checkbox"] { accent-color: #00a651 !important; }
+  input:focus { border-color: #00a651 !important; --tw-ring-color: #00a651 !important; }
+</style>
 <x-guest-layout>
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
